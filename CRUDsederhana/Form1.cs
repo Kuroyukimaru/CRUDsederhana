@@ -153,9 +153,21 @@ namespace CRUDsederhana
             }
         }
 
-
+        private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvMahasiswa.Rows[e.RowIndex].Cells[0].Value != null)
+            {
+                DataGridViewRow row = dgvMahasiswa.Rows[e.RowIndex];
+                txtNIM.Text = row.Cells[0].Value?.ToString() ?? "";
+                txtNama.Text = row.Cells[1].Value?.ToString() ?? "";
+                txtEmail.Text = row.Cells[2].Value?.ToString() ?? "";
+                txtTelepon.Text = row.Cells[3].Value?.ToString() ?? "";
+                txtAlamat.Text = row.Cells[4].Value?.ToString() ?? "";
+            }
+        }
 
         
+
 
     }
 }
