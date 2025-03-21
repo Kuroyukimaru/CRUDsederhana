@@ -88,7 +88,11 @@ namespace CRUDsederhana
             }
         }
 
-        
+        private bool ValidasiTelepon(string Telepon)
+        {
+            return Telepon.All(char.IsDigit) && Telepon.Length >= 10;
+        }
 
+        
     }
 }
