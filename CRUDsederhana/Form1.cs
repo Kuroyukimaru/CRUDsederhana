@@ -11,5 +11,11 @@ using System.Windows.Forms;
 
 namespace CRUDsederhana
 {
-    
+    public partial class Form1 : Form
+    {
+        private string connectionString = "Data Source=LAPTOP-OA7NKRPM\\OTOY;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
+
+        
+
+    }
 }
