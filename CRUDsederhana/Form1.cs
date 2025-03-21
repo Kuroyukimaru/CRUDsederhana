@@ -15,7 +15,11 @@ namespace CRUDsederhana
     {
         private string connectionString = "Data Source=LAPTOP-OA7NKRPM\\OTOY;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
-        
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
+        
     }
 }
