@@ -216,6 +216,19 @@ namespace CRUDsederhana
             }
         }
 
-        
+            private void txtNama_TextChanged(object sender, EventArgs e)
+            {
+
+            }
+
+            private void btnUbah_Click(object sender, EventArgs e)
+            {
+
+            }
+
+            private void dgvMahasiswa_click(object sender, EventArgs e)
+            {
+
+            }
     }
 }
