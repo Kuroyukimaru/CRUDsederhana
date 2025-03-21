@@ -60,6 +60,20 @@ namespace CRUDsederhana
                 }
             }
         }
+        private bool CekNIMExist(string nim)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT COUNT(*) FROM Mahasiswa WHERE NIM = @NIM";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@NIM", nim);
+                    conn.Open();
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
 
        
     }
